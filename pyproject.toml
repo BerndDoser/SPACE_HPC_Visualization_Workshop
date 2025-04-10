@@ -1,0 +1,24 @@
+[project]
+name = "visualization_workshop"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Bernd Doser",email = "bernd.doser@h-its.org"}
+]
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "pest @ git+https://github.com/BerndDoser/PEST@package",
+    "hipster @ git+https://github.com/HITS-AIN/HiPSter",
+    "spherinator @ git+https://github.com/HITS-AIN/Spherinator",
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "ipyaladin (>=0.5.2,<0.6.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
