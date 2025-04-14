@@ -1,0 +1,38 @@
+root_path: HiPSter
+overwrite: true
+verbose: true
+
+html:
+  url: http://rh04715.h-its.org:8083
+  title: HiPSter representation of Gaia XP DR3
+  aladin_lite_version: latest
+
+tasks:
+  - class_path: hipster.HiPSGenerator
+    init_args:
+      decoder:
+        model_path: /home/doserbd/gaia/gaia-vae-8-nll-normal-v0/decoder.onnx
+      image_maker:
+        class_path: hipster.SpectrumPlotter
+        init_args:
+          wavelengths:
+            start: 336
+            stop: 1021
+            step: 2
+          ylim: [0, 1]
+          margin: 0.02
+          figsize_in_pixel: 128
+          flip: True
+      hips_id: Gaia1
+      hips_name: Gaia XP DR3 model spectrum
+      hips_path: gaia/model_spectrum
+      max_order: 4
+      hierarchy: 2
+  - class_path: hipster.VOTableGenerator
+    init_args:
+      encoder:
+        model_path: /home/doserbd/gaia/gaia-vae-8-nll-normal-v0/encoder.onnx
+      data_directory: /home/doserbd/data/gaia/xp_calibrated/parquet_flux_error_subset
+      color: red
+      shape: circle
+      size: 10
