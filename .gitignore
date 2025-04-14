@@ -1,3 +1,5 @@
+*.sarif
+/HiPSter/
+/output/
 data/
 lightning_logs/
-*.sarif
