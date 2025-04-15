@@ -1449,7 +1449,7 @@ tqdm = "^4.67.1"
 type = "git"
 url = "https://github.com/HITS-AIN/HiPSter"
 reference = "HEAD"
-resolved_reference = "2ef5543db58e98e5dc7016c6e358393d06db0df5"
+resolved_reference = "8363e39e62995f3bb3467d3dda555a483527603e"
 
 [[package]]
 name = "html5lib"
@@ -2550,15 +2550,15 @@ files = [
 
 [[package]]
 name = "narwhals"
-version = "1.34.1"
+version = "1.35.0"
 description = "Extremely lightweight compatibility layer between dataframe libraries"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 markers = "python_version == \"3.11\" or python_version >= \"3.12\""
 files = [
-    {file = "narwhals-1.34.1-py3-none-any.whl", hash = "sha256:aee49a30d1624371ad975ede2bab16cd125ab5df0fd185e2f4757e103b074d27"},
-    {file = "narwhals-1.34.1.tar.gz", hash = "sha256:8941a08cf62f39ae67be945090b20a19c51fb9048ac909cad2f95aee23f9e302"},
+    {file = "narwhals-1.35.0-py3-none-any.whl", hash = "sha256:7562af132fa3f8aaaf34dc96d7ec95bdca29d1c795e8fcf14e01edf1d32122bc"},
+    {file = "narwhals-1.35.0.tar.gz", hash = "sha256:07477d18487fbc940243b69818a177ed7119b737910a8a254fb67688b48a7c96"},
 ]
 
 [package.extras]
@@ -3250,15 +3250,15 @@ files = [
 
 [[package]]
 name = "prompt-toolkit"
-version = "3.0.50"
+version = "3.0.51"
 description = "Library for building powerful interactive command lines in Python"
 optional = false
-python-versions = ">=3.8.0"
+python-versions = ">=3.8"
 groups = ["main"]
 markers = "python_version == \"3.11\" or python_version >= \"3.12\""
 files = [
-    {file = "prompt_toolkit-3.0.50-py3-none-any.whl", hash = "sha256:9b6427eb19e479d98acff65196a307c555eb567989e6d88ebbb1b509d9779198"},
-    {file = "prompt_toolkit-3.0.50.tar.gz", hash = "sha256:544748f3860a2623ca5cd6d2795e7a14f3d0e1c3c9728359013f79877fc89bab"},
+    {file = "prompt_toolkit-3.0.51-py3-none-any.whl", hash = "sha256:52742911fde84e2d423e2f9a4cf1de7d7ac4e51958f648d9540e0fb8db077b07"},
+    {file = "prompt_toolkit-3.0.51.tar.gz", hash = "sha256:931a162e3b27fc90c86f1b48bb1fb2c528c2761475e57c9c06de13311c7b54ed"},
 ]
 
 [package.dependencies]
@@ -4393,15 +4393,15 @@ jeepney = ">=0.6"
 
 [[package]]
 name = "sentry-sdk"
-version = "2.25.1"
+version = "2.26.1"
 description = "Python client for Sentry (https://sentry.io)"
 optional = false
 python-versions = ">=3.6"
 groups = ["main"]
 markers = "python_version == \"3.11\" or python_version >= \"3.12\""
 files = [
-    {file = "sentry_sdk-2.25.1-py2.py3-none-any.whl", hash = "sha256:60b016d0772789454dc55a284a6a44212044d4a16d9f8448725effee97aaf7f6"},
-    {file = "sentry_sdk-2.25.1.tar.gz", hash = "sha256:f9041b7054a7cf12d41eadabe6458ce7c6d6eea7a97cfe1b760b6692e9562cf0"},
+    {file = "sentry_sdk-2.26.1-py2.py3-none-any.whl", hash = "sha256:e99390e3f217d13ddcbaeaed08789f1ca614d663b345b9da42e35ad6b60d696a"},
+    {file = "sentry_sdk-2.26.1.tar.gz", hash = "sha256:759e019c41551a21519a95e6cef6d91fb4af1054761923dadaee2e6eca9c02c7"},
 ]
 
 [package.dependencies]
