@@ -1,8 +1,8 @@
 ---
-title: Spherinator & HiPSter
-subtitle: SPACE Training Webinar
+title: Scientific Discovery using Representation Learning to Interpret the Largest Cosmological Simulations
+subtitle: High-Performance Computing Visualization
 author: Bernd Doser (HITS)
-date: 2024/05/07
+date: 2025/05/14
 date-format: "MMMM YYYY"
 # institute: "[HITS gGmbH](https://h-its.org)"
 title-slide-attributes:
