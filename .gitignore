@@ -1,9 +1,12 @@
 .illustris_api_key.txt
+*.ckpt
 *.sarif
 /.quarto/
 /HiPSter/
 /index_files/
 /output/
+config.yaml
 data/
 index.html
 lightning_logs/
+wandb/

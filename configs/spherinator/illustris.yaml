@@ -1,4 +1,5 @@
 seed_everything: 42
+ckpt_path: illustris/g7xcagat/checkpoints/epoch=414-train_loss=0.23.ckpt
 
 model:
   class_path: spherinator.models.VariationalAutoencoder
@@ -11,67 +12,44 @@ model:
         cnn_layers:
           - class_path: spherinator.models.ConsecutiveConv2DLayer
             init_args:
-              kernel_size: 7
+              kernel_size: 3
               stride: 1
               padding: 0
-              num_layers: 5
-              base_channel_number: 16
-              channel_increment: 4
+              out_channels: [16, 20, 24] 
           - class_path: spherinator.models.ConsecutiveConv2DLayer
             init_args:
-              kernel_size: 5
+              kernel_size: 4
               stride: 2
               padding: 0
-              num_layers: 1
-              base_channel_number: 64
-          - class_path: spherinator.models.ConsecutiveConv2DLayer
-            init_args:
-              kernel_size: 5
-              stride: 2
-              padding: 0
-              num_layers: 1
-              base_channel_number: 96
-          - class_path: spherinator.models.ConsecutiveConv2DLayer
-            init_args:
-              kernel_size: 6
-              stride: 2
-              padding: 0
-              num_layers: 1
-              base_channel_number: 128
+              out_channels: [64, 128]
     decoder:
       class_path: spherinator.models.ConvolutionalDecoder2D
       init_args:
         input_dim: 3
         output_dim: [3, 128, 128]
-        cnn_input_dim: [128, 36]
+        cnn_input_dim: [128, 28, 28]
         cnn_layers:
+          - class_path: spherinator.models.ConsecutiveConvTranspose2DLayer
+            init_args:
+              kernel_size: 5
+              stride: 2
+              padding: 0
+              out_channels: [64]
           - class_path: spherinator.models.ConsecutiveConvTranspose2DLayer
             init_args:
               kernel_size: 6
               stride: 2
               padding: 0
-              out_channels_list: [96]
+              out_channels: [24]
           - class_path: spherinator.models.ConsecutiveConvTranspose2DLayer
             init_args:
-              kernel_size: 5
-              stride: 2
-              padding: 0
-              out_channels_list: [64]
-          - class_path: spherinator.models.ConsecutiveConvTranspose2DLayer
-            init_args:
-              kernel_size: 5
-              stride: 2
-              padding: 0
-              out_channels_list: [32]
-          - class_path: spherinator.models.ConsecutiveConvTranspose2DLayer
-            init_args:
-              kernel_size: 7
+              kernel_size: 3
               stride: 1
               padding: 0
-              out_channels_list: [28, 24, 20, 16, 1]
+              out_channels: [20, 16, 3]
               activation: null
     z_dim: 3
-    beta: 1.0e-4
+    beta: 1.0e-3
     encoder_out_dim: 128
 
 data:
@@ -100,13 +78,14 @@ lr_scheduler:
    verbose: True
 
 trainer:
-  max_epochs: 1000
+  max_epochs: -1
   accelerator: gpu
   devices: auto
   precision: 16-mixed
-  profiler: simple
-  enable_progress_bar: False
-  enable_model_summary: True
+  log_every_n_steps: 1
+  # profiler: simple
+  # enable_progress_bar: False
+  # enable_model_summary: False
 
   callbacks:
     - class_path: lightning.pytorch.callbacks.ModelCheckpoint
@@ -116,6 +95,9 @@ trainer:
         save_top_k: 1
         mode: min
         every_n_epochs: 1
+    # - class_path: spherinator.callbacks.LogReconstructionCallback
+    #   init_args:
+    #     samples: 6
 
   logger:
     class_path: lightning.pytorch.loggers.WandbLogger
