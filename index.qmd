@@ -29,27 +29,10 @@ format:
 - Summary and Outlook
 
 
-## FAIR Principles for Research Software
+## Project X: Modulare Workflow
 
-- **Findability**
+![](images/project_x.png){.absolute left=0 width=1800}
 
-  Software, and its metadata, is easy to find for humans and machines
-
-- **Accessibility**
-
-  Software, and its metadata, is retrievable via standardized protocols
-
-- **Interoperability**
-
-  Software interoperates with other software through standards
-
-- **Reusability**
-
-  Software is usable and reusable
-
-::: aside
-Source: [@Barker2022]
-:::
 
 
 ## FAIR: Development Setup
