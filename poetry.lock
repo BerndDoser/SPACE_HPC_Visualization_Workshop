@@ -3100,8 +3100,8 @@ scipy = "^1.15"
 [package.source]
 type = "git"
 url = "https://github.com/BerndDoser/PEST"
-reference = "package"
-resolved_reference = "b97c9d271ed21c6ec7601e0d0310473f65eb5592"
+reference = "HEAD"
+resolved_reference = "fee976d7f6298397570ed4f755addbba76eed4db"
 
 [[package]]
 name = "pexpect"
@@ -4644,7 +4644,7 @@ wandb = "^0.19.9"
 type = "git"
 url = "https://github.com/HITS-AIN/Spherinator"
 reference = "HEAD"
-resolved_reference = "c66bfb589f0c14c5288b85be4a60d2410d1133bd"
+resolved_reference = "37b1d71f768bcb0589f1165324848c37dd52e6c3"
 
 [[package]]
 name = "stack-data"
@@ -5344,4 +5344,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<4.0"
-content-hash = "cbe7e84db5dcae04c6383aad9083236de0e5f141bcfae79cc75d5cb1d11bb1ad"
+content-hash = "b8adbf39258127326960ddf381848e593f17dac877b44597a723a0f57da6db3d"

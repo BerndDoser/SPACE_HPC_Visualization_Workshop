@@ -9,7 +9,7 @@ license = {text = "Apache-2.0"}
 readme = "README.md"
 requires-python = ">=3.11,<4.0"
 dependencies = [
-    "pest @ git+https://github.com/BerndDoser/PEST@package",
+    "pest @ git+https://github.com/BerndDoser/PEST",
     "hipster @ git+https://github.com/HITS-AIN/HiPSter",
     "spherinator @ git+https://github.com/HITS-AIN/Spherinator",
     "ipykernel (>=6.29.5,<7.0.0)",
