@@ -1,5 +1,5 @@
 seed_everything: 42
-ckpt_path: illustris/g7xcagat/checkpoints/epoch=414-train_loss=0.23.ckpt
+ckpt_path: illustris/no8e8ygy/checkpoints/epoch=1571-train_loss=0.01.ckpt
 
 model:
   class_path: spherinator.models.VariationalAutoencoder
@@ -95,9 +95,9 @@ trainer:
         save_top_k: 1
         mode: min
         every_n_epochs: 1
-    # - class_path: spherinator.callbacks.LogReconstructionCallback
-    #   init_args:
-    #     samples: 6
+    - class_path: spherinator.callbacks.LogReconstructionCallback
+      init_args:
+        samples: 6
 
   logger:
     class_path: lightning.pytorch.loggers.WandbLogger
