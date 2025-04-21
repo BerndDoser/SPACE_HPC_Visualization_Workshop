@@ -1452,7 +1452,7 @@ tqdm = "^4.67.1"
 type = "git"
 url = "https://github.com/HITS-AIN/HiPSter"
 reference = "HEAD"
-resolved_reference = "8363e39e62995f3bb3467d3dda555a483527603e"
+resolved_reference = "845bc5bc0482cda34300c83ff4cddbc2638990f4"
 
 [[package]]
 name = "html5lib"
