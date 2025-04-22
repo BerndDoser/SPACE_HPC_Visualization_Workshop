@@ -8,49 +8,39 @@ model:
       class_path: spherinator.models.ConvolutionalEncoder2D
       init_args:
         input_dim: [3, 128, 128]
-        output_dim: 128
+        output_dim: 12
         cnn_layers:
           - class_path: spherinator.models.ConsecutiveConv2DLayer
             init_args:
-              kernel_size: 3
-              stride: 1
-              padding: 0
-              out_channels: [16, 20, 24] 
-          - class_path: spherinator.models.ConsecutiveConv2DLayer
-            init_args:
-              kernel_size: 4
+              kernel_size: 5
               stride: 2
-              padding: 0
-              out_channels: [64, 128]
+              padding: 2
+              out_channels: [6, 9, 12]
     decoder:
       class_path: spherinator.models.ConvolutionalDecoder2D
       init_args:
         input_dim: 3
         output_dim: [3, 128, 128]
-        cnn_input_dim: [128, 28, 28]
+        cnn_input_dim: [12, 16, 16]
         cnn_layers:
           - class_path: spherinator.models.ConsecutiveConvTranspose2DLayer
             init_args:
               kernel_size: 5
               stride: 2
-              padding: 0
-              out_channels: [64]
+              padding: 2
+              output_padding: 1
+              out_channels: [9, 6]
           - class_path: spherinator.models.ConsecutiveConvTranspose2DLayer
             init_args:
-              kernel_size: 6
+              kernel_size: 5
               stride: 2
-              padding: 0
-              out_channels: [24]
-          - class_path: spherinator.models.ConsecutiveConvTranspose2DLayer
-            init_args:
-              kernel_size: 3
-              stride: 1
-              padding: 0
-              out_channels: [20, 16, 3]
+              padding: 2
+              output_padding: 1
+              out_channels: [3]
               activation: null
     z_dim: 3
     beta: 1.0e-3
-    encoder_out_dim: 128
+    encoder_out_dim: 12
 
 data:
   class_path: spherinator.data.ParquetDataModule
