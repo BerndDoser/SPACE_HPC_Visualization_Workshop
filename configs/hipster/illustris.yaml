@@ -1,0 +1,29 @@
+root_path: HiPSter
+overwrite: true
+verbose: true
+
+html:
+  url: http://rh04715.h-its.org:8083
+  title: HiPSter representation of Gaia XP DR3
+  aladin_lite_version: latest
+
+tasks:
+  - class_path: hipster.HiPSGenerator
+    init_args:
+      decoder:
+        model_path: data/illustris/models/full_trained/decoder.onnx
+      image_maker:
+        class_path: hipster.ImagePlotter
+      hips_id: Illustris
+      hips_name: Illustris model
+      hips_path: illustris/model
+      max_order: 4
+      hierarchy: 2
+  - class_path: hipster.VOTableGenerator
+    init_args:
+      encoder:
+        model_path: data/illustris/models/full_trained/encoder.onnx
+      data_directory: data/illustris/parquet
+      color: red
+      shape: circle
+      size: 10
