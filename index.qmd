@@ -21,18 +21,16 @@ format:
 
 ## Outline {background-image="images/aladin-lite-background.png"}
 
-- FAIR Development Setup
+- Preprocessing: The Data
 - Spherinator: The Model
-- Spherinator: The Training
 - HiPSter: The Inference
-- HiPSter: The Workflow
+- Workflow Orchestration
 - Summary and Outlook
 
 
-## Project X: Modulare Workflow
+## Project X: Workflow Structure
 
-![](images/project_x.png){.absolute left=0 width=1800}
-
+![](images/projectx_v2.png){.absolute left=0 width=1800}
 
 
 ## FAIR: Development Setup
