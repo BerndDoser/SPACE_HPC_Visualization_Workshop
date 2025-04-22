@@ -3,7 +3,7 @@ overwrite: true
 verbose: true
 
 html:
-  url: http://rh04715.h-its.org:8083
+  url: http://localhost:8083
   title: HiPSter representation of Gaia XP DR3
   aladin_lite_version: latest
 
