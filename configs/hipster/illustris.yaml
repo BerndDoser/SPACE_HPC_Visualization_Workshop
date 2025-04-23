@@ -1,10 +1,11 @@
 root_path: HiPSter
+# title: illustris
 overwrite: true
 verbose: true
 
 html:
   url: http://localhost:8083
-  title: HiPSter representation of Gaia XP DR3
+  title: HiPSter representation of Illustris TNG100 SKIRT images
   aladin_lite_version: latest
 
 tasks:
