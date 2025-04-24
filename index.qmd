@@ -1,5 +1,6 @@
 ---
-title: Scientific Discovery using Representation Learning to Interpret the Largest Cosmological Simulations
+# title: Scientific Discovery using Representation Learning to Interpret the Largest Cosmological Simulations
+title: Representation Learning with Spherinator
 subtitle: High-Performance Computing Visualization
 author: Bernd Doser (HITS)
 date: 2025/05/14
@@ -25,7 +26,21 @@ format:
 - **PEST**: Data Preprocessing
 - **Spherinator**: The Training
 - **HiPSter**: The Inference
-- Workflow Orchestration
+- **Gaia XP DR3 spectra**: Example for 1D spectra data
+- **Flyte** and **StreamFlow**: Workflow Orchestration
+
+
+## Associated Materials
+
+- This presentation with the Jupyter notebooks are publicly available at
+  [GitHub](https://github.com/BerndDoser/SPACE_HPC_Visualization_Workshop).
+
+- User guides and documentation are available at
+  [ReadTheDocs](https://spherinator.readthedocs.io/en/latest/index.html).
+
+- [PEST](https://github.com/HITS-AIN/PEST): Data acquisition and preprocessing
+- [Spherinator](https://github.com/HITS-AIN/Spherinator): Representation Learning using PyTorch Lightning
+- [HiPSter](https://github.com/HITS-AIN/HiPSter): Generation of HiPS maps and catalogs
 
 
 ## Project X: The Big Picture
@@ -112,6 +127,10 @@ Source: [@Fernique_2015]
 ## Gaia XP DR3 spectra
 
 Example for 1D spectra data
+
+```{=html}
+<iframe width="500" height="500" src="https://space.h-its.org" title="Webpage example"></iframe>
+```
 
 
 ## Summary and Outlook

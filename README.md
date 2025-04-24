@@ -1,11 +1,12 @@
 # SPACE HPC Visualization Workshop
 
+[Start Presentation](https://bernddoser.github.io/SPACE_HPC_Visualization_Workshop/)
+
 ## Related Repositories
 
-- [Spherinator](https://github.com/HITS-AIN/Spherinator): PyTorch Lightning Training using CNN an
-  spherical latent space
+- [PEST](https://github.com/HITS-AIN/PEST): Data acquisition and preprocessing
+- [Spherinator](https://github.com/HITS-AIN/Spherinator): Representation Learning using PyTorch Lightning
 - [HiPSter](https://github.com/HITS-AIN/HiPSter): Generation of HiPS maps and catalogs
-- [PEST](https://github.com/HITS-AIN/PEST): Data aquisition and preprocessing
 
 ## Demo using Illustris TNG SKIRT images
 
