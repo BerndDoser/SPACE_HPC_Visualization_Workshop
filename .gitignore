@@ -6,6 +6,7 @@
 /HiPSter/
 /index_files/
 /output/
+artifacts/
 config.yaml
 data/
 index.html
