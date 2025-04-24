@@ -21,40 +21,37 @@ format:
 
 ## Outline {background-image="images/aladin-lite-background.png"}
 
-- Preprocessing: The Data
-- Spherinator: The Model
-- HiPSter: The Inference
+- **Project X**: The Big Picture
+- **PEST**: Data Preprocessing
+- **Spherinator**: The Training
+- **HiPSter**: The Inference
 - Workflow Orchestration
-- Summary and Outlook
 
 
-## Project X: Workflow Structure
+## Project X: The Big Picture
 
 ![](images/projectx_v2.png){.absolute left=0 width=1800}
 
 
-## FAIR: Development Setup
+## PEST: Data Preprocessing
 
-- [GitHub](https://github.com/HITS-AIN/Spherinator): Repository and project management
-- [GitHub Actions](https://github.com/HITS-AIN/Spherinator/blob/main/.github/workflows/python-package.yml): Continuous integration
-  - Static code analysis
-  - Unit tests
-- [Poetry](https://python-poetry.org/): Python dependency management
-- [Dependabot](https://docs.github.com/en/code-security/dependabot): Automated security / version updates
-- [ONNX](https://onnx.ai/): Open Standard for machine learning interoperability
-- [Weights&Biases](https://wandb.ai/): Visualizing and tracking machine learning experiments
+- [PEST](https://github.com/HITS-AIN/PEST) preprocess 3D simulation data into multi-channel images, data cubes, and point clouds
+- **Parquet** as uniform file format for different data structures
+  - Efficient storage by columnar data format
+  - Fast access by Apache Arrow
 
 
-## Spherinator: The Model
+## Spherinator: The Training
+
+- [Spherinator](https://github.com/HITS-AIN/Spherinator)
 
 - Representation learning by **dimensionality reduction**
 - **Convolutional Variational Autoencoder** (VAE)
 ![](images/vae.svg){width="600"}
-- **Rotational invariance** by using set of rotated images, where only the one with the lowest reconstruction loss is used for the training
 - **(Hyper-)spherical** latent space
 
 ::: aside
-Source: [@Polsterer2024]
+Source: [@Polsterer2024], [@Doser2025]
 :::
 
 
@@ -88,35 +85,9 @@ Source: [@DeCao2020]
 :::
 
 
-## Spherinator: Loss Function
+## Spherinator: Demo Part I
 
-$$\begin{aligned}
-L = L_{recon} + \lambda \cdot L_{KL}
-\end{aligned}$$
-
-$L_{recon}$: Reconstruction loss by pixel-wise euclidean distance
-
-$L_{KL}$: Kullback-Leibler divergence
-
-- Euclidean space: Gaussian reference distribution
-- Hyper-spherical space: Uniform reference distribution
-
-$\lambda$: Balancing factor
-
-
-## Spherinator: The Training
-
-[Demo 1](demo_spherinator.ipynb)
-
-
-## Monitoring with Weights&Biases
-
-- Tracking experiments
-![](images/wandb_illustris_loss.png)
-- Collaborative project management (teams, reports)
-- Model registry (publish models for staging and production)
-- Hyperparameter optimization
-- Free for academic research
+[Spherinator demo using Illustris TNG](./demo_spherinator_illustris.ipynb)
 
 
 ## HiPSter: The Inference
@@ -133,10 +104,14 @@ HiPS - Hierarchical Progressive Survey
 Source: [@Fernique_2015]
 :::
 
+## HiPSter: Demo Part II
 
-## HiPSter: The Workflow
+[HiPSter demo using Illustris TNG](./demo_hipster_illustris.ipynb)
 
-![](images/HiPSter.drawio.svg){.absolute left=0 width=1800}
+
+## Gaia XP DR3 spectra
+
+Example for 1D spectra data
 
 
 ## Summary and Outlook
