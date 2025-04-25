@@ -1,5 +1,4 @@
 root_path: HiPSter
-# title: illustris
 overwrite: true
 verbose: true
 
@@ -15,11 +14,12 @@ tasks:
         model_path: data/illustris/models/full_trained/decoder.onnx
       image_maker:
         class_path: hipster.ImagePlotter
+      max_order: 4
+      hierarchy: 1
       hips_id: Illustris
       hips_name: Illustris model
       hips_path: illustris/model
-      max_order: 4
-      hierarchy: 2
+
   - class_path: hipster.VOTableGenerator
     init_args:
       encoder:
@@ -27,4 +27,4 @@ tasks:
       data_directory: data/illustris/parquet
       color: red
       shape: circle
-      size: 10
+      size: 5
