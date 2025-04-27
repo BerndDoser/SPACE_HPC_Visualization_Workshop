@@ -124,13 +124,24 @@ Source: [@Fernique_2015]
 [HiPSter demo using Illustris TNG](./demo_hipster_illustris.ipynb)
 
 
-## Gaia XP DR3 spectra
+## Gaia DR3 XP spectra
 
-Example for 1D spectra data
+::: {layout='[1,1]'}
+::: n1
+::: {style="font-size: 80%;"}
+[Gaia DR3 XP](http://cdn.gea.esac.esa.int/Gaia/gdr3/) 
+contains over 200 billions blue (BP) and red (RP) spectra as continuous spectra with 55 parameters per spectrum.
+![](images/calibrated_spectrum_plot.png){width="600"}
 
+
+:::
+:::
+::: n2
 ```{=html}
-<iframe width="500" height="500" src="https://space.h-its.org" title="Webpage example"></iframe>
+<iframe width="600" height="600" src="https://space.h-its.org" title="Webpage example"></iframe>
 ```
+:::
+:::
 
 
 ## Summary and Outlook
