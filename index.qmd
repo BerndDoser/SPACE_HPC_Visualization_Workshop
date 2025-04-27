@@ -32,15 +32,14 @@ format:
 
 ## Associated Materials
 
-- This presentation with the Jupyter notebooks are publicly available at
-  [GitHub](https://github.com/BerndDoser/SPACE_HPC_Visualization_Workshop).
-
-- User guides and documentation are available at
-  [ReadTheDocs](https://spherinator.readthedocs.io/en/latest/index.html).
-
-- [PEST](https://github.com/HITS-AIN/PEST): Data acquisition and preprocessing
-- [Spherinator](https://github.com/HITS-AIN/Spherinator): Representation Learning using PyTorch Lightning
-- [HiPSter](https://github.com/HITS-AIN/HiPSter): Generation of HiPS maps and catalogs
+- The presentation and demo notebooks are publicly available at\
+[github.com/BerndDoser/SPACE_HPC_Visualization_Workshop](https://github.com/BerndDoser/SPACE_HPC_Visualization_Workshop)
+- Related project repositories:
+  - [PEST](https://github.com/HITS-AIN/PEST): Data acquisition and preprocessing
+  - [Spherinator](https://github.com/HITS-AIN/Spherinator): Representation Learning using PyTorch Lightning
+  - [HiPSter](https://github.com/HITS-AIN/HiPSter): Generation of HiPS maps and catalogs
+- User documentation is available at
+  [ReadTheDocs](https://spherinator.readthedocs.io/en/latest/index.html)
 
 
 ## Project X: The Big Picture
@@ -51,35 +50,35 @@ format:
 ## PEST: Data Preprocessing
 
 - [PEST](https://github.com/HITS-AIN/PEST) preprocess 3D simulation data into multi-channel images, data cubes, and point clouds
-- **Parquet** as uniform file format for different data structures
+- The different data types are uniquely stored as **Parquet** files
   - Efficient storage by columnar data format
   - Fast access by Apache Arrow
 
 
 ## Spherinator: The Training
 
-- [Spherinator](https://github.com/HITS-AIN/Spherinator)
+- Representation learning using a **Variational Autoencoder**
+- Dimensionality reduction to a **(Hyper-)spherical** latent space
+- Training with **PyTorch Lightning**
 
-- Representation learning by **dimensionality reduction**
-- **Convolutional Variational Autoencoder** (VAE)
-![](images/vae.svg){width="600"}
-- **(Hyper-)spherical** latent space
+![](images/vae.svg){width="1100" fig-align="center"}
 
 ::: aside
 Source: [@Polsterer2024], [@Doser2025]
 :::
 
 
-## Power Spherical Distribution
+## Spherinator: The Power Spherical Distribution
+
+:::: {.columns}
+::: {.column width="55%"}
+
+Normal distribution on the hyper-sphere:
 
 $$\begin{aligned}
 p_{X}(x; \mu, \kappa) = N_{X}(\kappa, d)^{-1}(1 + \mu^{\top}x)^{\kappa}
 \end{aligned}$$
 
-
-:::: {.columns}
-
-::: {.column width="40%"}
 $d$: Dimension
 
 $\mu$: Direction
@@ -89,8 +88,9 @@ $\kappa$: Concentration
 $N_{X}$: Normalization factor
 :::
 
-::: {.column width="60%"}
-![](images/power_spherical.png)
+::: {.column width="45%"}
+![](images/power_spherical.png){width="600" fig-align="center"}
+
 :::
 
 ::::
@@ -98,11 +98,6 @@ $N_{X}$: Normalization factor
 ::: aside
 Source: [@DeCao2020]
 :::
-
-
-## Spherinator: Demo Part I
-
-[Spherinator demo using Illustris TNG](./demo_spherinator_illustris.ipynb)
 
 
 ## HiPSter: The Inference
@@ -119,9 +114,7 @@ HiPS - Hierarchical Progressive Survey
 Source: [@Fernique_2015]
 :::
 
-## HiPSter: Demo Part II
-
-[HiPSter demo using Illustris TNG](./demo_hipster_illustris.ipynb)
+# Let's begin the demonstration!
 
 
 ## Gaia DR3 XP spectra
@@ -141,6 +134,25 @@ contains over 200 billions blue (BP) and red (RP) spectra as continuous spectra 
 <iframe width="600" height="600" src="https://space.h-its.org/Gaia/" title="Webpage example"></iframe>
 ```
 :::
+:::
+
+
+## Workflow Orchestration with Flyte
+
+[Flyte]() is a highly scalable **cloud-native** workflow orchestration platform on top of containers and Kubernetes
+
+![](images/flyte-architecture.svg){fig-align="center"}
+
+
+## Workflow Orchestration with StreamFlow
+
+[StreamFlow]() executes **Common Workflow Language (CWL)** using a deployment model that includes containers, Slurm (HPC), and Kubernetes.
+
+![](images/streamflow-model.png){width="40%" fig-align="center"}
+
+::: aside
+Source: [StreamFlow](
+https://streamflow.di.unito.it/documentation/0.2/guide/architecture.html)
 :::
 
 
