@@ -138,7 +138,7 @@ contains over 200 billions blue (BP) and red (RP) spectra as continuous spectra 
 :::
 ::: n2
 ```{=html}
-<iframe width="600" height="600" src="https://space.h-its.org" title="Webpage example"></iframe>
+<iframe width="600" height="600" src="https://space.h-its.org/Gaia/" title="Webpage example"></iframe>
 ```
 :::
 :::

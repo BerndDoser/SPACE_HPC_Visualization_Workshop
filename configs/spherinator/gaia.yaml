@@ -14,30 +14,25 @@ model:
               kernel_size: 7
               stride: 1
               padding: 0
-              num_layers: 5
-              base_channel_number: 16
-              channel_increment: 4
+              out_channels: [16, 20, 24, 28, 32]
           - class_path: spherinator.models.ConsecutiveConv1DLayer
             init_args:
               kernel_size: 5
               stride: 2
               padding: 0
-              num_layers: 1
-              base_channel_number: 64
+              out_channels: [64]
           - class_path: spherinator.models.ConsecutiveConv1DLayer
             init_args:
               kernel_size: 5
               stride: 2
               padding: 0
-              num_layers: 1
-              base_channel_number: 96
+              out_channels: [96]
           - class_path: spherinator.models.ConsecutiveConv1DLayer
             init_args:
               kernel_size: 6
               stride: 2
               padding: 0
-              num_layers: 1
-              base_channel_number: 128
+              out_channels: [128]
     decoder:
       class_path: spherinator.models.ConvolutionalDecoder1D
       init_args:
@@ -50,25 +45,25 @@ model:
               kernel_size: 6
               stride: 2
               padding: 0
-              out_channels_list: [96]
+              out_channels: [96]
           - class_path: spherinator.models.ConsecutiveConvTranspose1DLayer
             init_args:
               kernel_size: 5
               stride: 2
               padding: 0
-              out_channels_list: [64]
+              out_channels: [64]
           - class_path: spherinator.models.ConsecutiveConvTranspose1DLayer
             init_args:
               kernel_size: 5
               stride: 2
               padding: 0
-              out_channels_list: [32]
+              out_channels: [32]
           - class_path: spherinator.models.ConsecutiveConvTranspose1DLayer
             init_args:
               kernel_size: 7
               stride: 1
               padding: 0
-              out_channels_list: [28, 24, 20, 16, 1]
+              out_channels: [28, 24, 20, 16, 1]
               activation: null
     z_dim: 3
     beta: 1.0e-4

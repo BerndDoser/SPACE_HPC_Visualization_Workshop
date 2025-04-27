@@ -3,7 +3,8 @@ overwrite: true
 verbose: true
 
 html:
-  url: http://localhost:8083
+  # url: http://localhost:8083
+  url: https://space.h-its.org/Gaia
   title: HiPSter representation of Gaia XP DR3
   aladin_lite_version: latest
 
@@ -11,7 +12,7 @@ tasks:
   - class_path: hipster.HiPSGenerator
     init_args:
       decoder:
-        model_path: /home/doserbd/gaia/gaia-vae-8-nll-normal-v0/decoder.onnx
+        model_path: data/gaia/models/full_trained/decoder.onnx
       image_maker:
         class_path: hipster.SpectrumPlotter
         init_args:
@@ -26,13 +27,16 @@ tasks:
       hips_id: Gaia1
       hips_name: Gaia XP DR3 model spectrum
       hips_path: gaia/model_spectrum
-      max_order: 4
-      hierarchy: 2
+      max_order: 2
+      hierarchy: 4
   - class_path: hipster.VOTableGenerator
     init_args:
       encoder:
-        model_path: /home/doserbd/gaia/gaia-vae-8-nll-normal-v0/encoder.onnx
-      data_directory: /home/doserbd/data/gaia/xp_calibrated/parquet_flux_error_subset
+        model_path: data/gaia/models/full_trained/encoder.onnx
+      data_directory: data/gaia/parquet
+      data_column: flux
+      dataset: gaia
+      output_file: gaia.vot
       color: red
       shape: circle
       size: 10
