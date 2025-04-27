@@ -3,8 +3,7 @@ overwrite: true
 verbose: true
 
 html:
-  # url: http://localhost:8083
-  url: https://space.h-its.org/Gaia
+  url: http://localhost:8083
   title: HiPSter representation of Gaia XP DR3
   aladin_lite_version: latest
 
