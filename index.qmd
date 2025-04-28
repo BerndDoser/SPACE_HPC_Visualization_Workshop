@@ -26,7 +26,8 @@ format:
 - **PEST**: Data Preprocessing
 - **Spherinator**: The Training
 - **HiPSter**: The Inference
-- **Gaia XP DR3 spectra**: Example for 1D spectra data
+- **Live demo**: Illustris TNG
+- **Gaia XP DR3 spectra**: Spectral data
 - **Flyte** and **StreamFlow**: Workflow Orchestration
 
 
@@ -158,12 +159,14 @@ https://streamflow.di.unito.it/documentation/0.2/guide/architecture.html)
 
 ## Summary and Outlook
 
-- Spherinator & HiPSter promising solution for classifying large datasets
-- Easy feature extension due to **modern software development techniques**
-- Evaluation of encoder, decoder, loss function for better reconstruction
-- **Orchestration** of the HiPSter workflow
-- **Geometric Deep Learning**: 3D point clouds instead of images
-- [Prototype](https://space.h-its.org) and [source code](https://github.com/HITS-AIN/Spherinator) are publicly available
+- Modular and flexible data workflow (Project X)
+- Uniform interconnectivity
+  - **Parquet** for data storage
+  - **ONNX** for model exchange
+- Workflow Orchestration ([ML Workflow Seminar](https://bernddoser.github.io/ML-workflow-orchestration/))
+  - **Flyte** for cloud-native workflows
+  - **StreamFlow** for HPC workflows
+- Prototype for **Illustris TNG** and **Gaia DR3 XP** is available at [space.h-its.org](https://space.h-its.org)
 
 
 ## Acknowledgement & Disclaimer {background-image="images/SPACE_acknowledgement_background.png"}
