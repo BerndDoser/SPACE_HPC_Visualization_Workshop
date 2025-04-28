@@ -81,24 +81,3 @@ trainer:
   devices: auto
   precision: 16-mixed
   log_every_n_steps: 1
-
-  callbacks:
-    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
-      init_args:
-        monitor: train_loss
-        filename: "{epoch}-{train_loss:.2f}"
-        save_top_k: 1
-        mode: min
-        every_n_epochs: 1
-    - class_path: spherinator.callbacks.LogReconstructionCallback
-      init_args:
-        samples: 6
-
-  logger:
-    class_path: lightning.pytorch.loggers.WandbLogger
-    init_args:
-      project: illustris
-      log_model: True
-      entity: ain-space
-      tags:
-        - vae
