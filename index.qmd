@@ -20,7 +20,7 @@ format:
       - title-slide.html
 ---
 
-## Outline {background-image="images/aladin-lite-background.png"}
+## Agenda
 
 - **Project X**: The Big Picture
 - **PEST**: Data Preprocessing
@@ -53,7 +53,8 @@ format:
 - [PEST](https://github.com/HITS-AIN/PEST) preprocess 3D simulation data into multi-channel images, data cubes, and point clouds
 - The different data types are uniquely stored as **Parquet** files
   - Efficient storage by columnar data format
-  - Fast access by Apache Arrow
+  - Fast access by [Apache Arrow]()
+  - Interoperable with many frameworks (e.g., PyTorch, TensorFlow) and programming languages (e.g., Python, Julia, C++, Rust)
 
 
 ## Spherinator: The Training
