@@ -2,16 +2,19 @@
 # title: Scientific Discovery using Representation Learning to Interpret the Largest Cosmological Simulations
 title: Representation Learning with Spherinator
 subtitle: High-Performance Computing Visualization
-author: Bernd Doser (HITS)
+# author: |
+#   | Bernd Doser & Sebastian Trujillo-Gomez
+#   | Kai Polsterer, Andreas Fehlner, Fenja Schweder, Romain Chazotte
+author: <strong>Bernd Doser & Sebastian Trujillo-Gomez</strong><br>Kai Polsterer, Andreas Fehlner, Fenja Schweder, Romain Chazotte
 date: 2025/05/14
 date-format: "MMMM YYYY"
-# institute: "[HITS gGmbH](https://h-its.org)"
+institute: Heidelberg Institute for Theoretical Studies (HITS)
 title-slide-attributes:
   data-background-image: images/SPACE_title_slide.png
 format:
   revealjs:
     logo: images/HITS_RGB_eng.jpg
-    footer: "Spherinator & HiPSter (B. Doser)"
+    footer: "Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)"
     slide-number: true
     highlight-style: a11y
     bibliography: references.bib
