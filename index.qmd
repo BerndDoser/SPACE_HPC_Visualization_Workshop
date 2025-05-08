@@ -53,11 +53,24 @@ format:
 
 ## PEST: Data Preprocessing
 
-- [PEST](https://github.com/HITS-AIN/PEST) preprocess 3D simulation data into multi-channel images, data cubes, and point clouds
-- The different data types are uniquely stored as **Parquet** files
-  - Efficient storage by columnar data format
-  - Fast access by [Apache Arrow]()
-  - Interoperable with many frameworks (e.g., PyTorch, TensorFlow) and programming languages (e.g., Python, Julia, C++, Rust)
+:::: {.columns}
+::: {.column width="40%"}
+
+![](images/PEST.png){fig-align="center" background-color="white"}
+
+:::
+::: {.column width="60%"}
+::: {style="font-size: 80%;"}
+
+- [PEST](https://github.com/HITS-AIN/PEST) preprocess universal cosmological simulation data into multi-channel images, data cubes, and point clouds
+- [Apache Parquet](https://parquet.apache.org/) stores multi-modal data in a unique way
+  - Efficient columnar data storage
+  - Fast access by [Apache Arrow](https://arrow.apache.org/)
+  - Interoperable with many frameworks (**PyTorch, TensorFlow) and programming languages (Python, Julia, C++, Rust)
+
+:::
+:::
+::::
 
 
 ## Spherinator: The Training
@@ -69,7 +82,7 @@ format:
 ![](images/vae.svg){width="1100" fig-align="center"}
 
 ::: aside
-Source: [@Polsterer2024], [@Doser2025]
+Source: @Polsterer2024, @Doser2025
 :::
 
 
