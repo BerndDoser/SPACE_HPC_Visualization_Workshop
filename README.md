@@ -2,6 +2,8 @@
 
 [Start Presentation](https://bernddoser.github.io/SPACE_HPC_Visualization_Workshop/)
 
+[Colab](https://colab.research.google.com/drive/1fGe2Sl1MIRAahUZANGAEm3WOXiAd8NbW?usp=sharing)
+
 ## Related Repositories
 
 - [PEST](https://github.com/HITS-AIN/PEST): Data acquisition and preprocessing
