@@ -1,9 +1,8 @@
 # SPACE HPC Visualization Workshop
 
-[Start Presentation](https://bernddoser.github.io/SPACE_HPC_Visualization_Workshop/)
-
-[Colab Drive](https://colab.research.google.com/drive/1fGe2Sl1MIRAahUZANGAEm3WOXiAd8NbW?usp=sharing)
-[Colab GitHub](https://colab.research.google.com/github/BerndDoser/PINK/blob/pypi/colab/pink-train-demo.ipynb)
+- [Start Presentation](https://bernddoser.github.io/SPACE_HPC_Visualization_Workshop/)
+- [Colab Drive](https://colab.research.google.com/drive/1fGe2Sl1MIRAahUZANGAEm3WOXiAd8NbW?usp=sharing)
+- [Colab GitHub](https://github.com/BerndDoser/SPACE_HPC_Visualization_Workshop/blob/main/colab/spherinator_illustris.ipynb)
 
 ## Related Repositories
 
