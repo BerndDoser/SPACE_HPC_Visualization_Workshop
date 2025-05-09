@@ -11,16 +11,19 @@ date-format: "MMMM YYYY"
 institute: Heidelberg Institute for Theoretical Studies (HITS)
 title-slide-attributes:
   data-background-image: images/SPACE_title_slide.png
+  data-background-size: cover
 format:
   revealjs:
-    logo: images/HITS_RGB_eng.jpg
-    footer: "Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)"
+    # logo: images/HITS_RGB_eng.jpg
+    # footer: "Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)"
     slide-number: true
     highlight-style: a11y
     bibliography: references.bib
     width: 1300
     template-partials:
       - title-slide.html
+    menu: false
+    show-slide-number: print
 ---
 
 ## Agenda
@@ -33,6 +36,11 @@ format:
 - **Gaia XP DR3 spectra**: Spectral data
 - **Flyte** and **StreamFlow**: Workflow Orchestration
 
+![](images/illustris_latent_sphere_quarter.png){.absolute top=-120 right=-100 width="700" height="700"}
+
+:::footer
+Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)
+:::
 
 ## Associated Materials
 
