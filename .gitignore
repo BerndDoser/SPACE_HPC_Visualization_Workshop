@@ -1,8 +1,0 @@
-.illustris_api_key.txt
-*.sarif
-/.quarto/
-/HiPSter/
-/index_files/
-/output/
-data/
-lightning_logs/
