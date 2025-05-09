@@ -3,10 +3,14 @@
 *.ckpt
 *.sarif
 /.quarto/
+/colab/*.onnx
+/colab/output/
 /HiPSter/
 /index_files/
 /output/
 artifacts/
+colab/illustris_full_trained/
+colab/illustris.parquet
 config.yaml
 data/
 index.html
