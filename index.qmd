@@ -33,7 +33,7 @@ format:
 - **Spherinator**: The Training
 - **HiPSter**: The Inference
 - **Live demo**: Illustris TNG
-- **Gaia XP DR3 spectra**: Spectral data
+- **Multimodality**: 1D Spectral Data
 - **Flyte** and **StreamFlow**: Workflow Orchestration
 
 ![](images/illustris_latent_sphere_quarter.png){.absolute top=-120 right=-100 width="700" height="700"}
@@ -56,7 +56,17 @@ Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)
 
 ## Project X: The Big Picture
 
-![](images/projectx_v2.png){.absolute left=0 width=1800}
+![](images/projectx_v3_1.png){.absolute left=0 width=1800}
+
+
+## Project X: The Big Picture
+
+![](images/projectx_v3_2.png){.absolute left=0 width=1800}
+
+
+## Project X: The Big Picture
+
+![](images/projectx_v3.png){.absolute left=0 width=1800}
 
 
 ## PEST: Data Preprocessing
