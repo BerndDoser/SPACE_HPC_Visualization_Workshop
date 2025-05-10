@@ -165,9 +165,6 @@
 <li><strong>Flyte</strong> and <strong>StreamFlow</strong>: Workflow Orchestration</li>
 </ul>
 <p><img data-src="images/illustris_latent_sphere_quarter.png" class="absolute" style="top: -120px; right: -100px; width: 700px; height: 700px; "></p>
-<div class="footer">
-<p>Spherinator &amp; HiPSter (B. Doser &amp; S. Trujillo-Gomez)</p>
-</div>
 </section>
 <section id="associated-materials" class="slide level2">
 <h2>Associated Materials</h2>
@@ -324,9 +321,10 @@ p_{X}(x; \mu, \kappa) = N_{X}(\kappa, d)^{-1}(1 + \mu^{\top}x)^{\kappa}
 <li>Prototype for <strong>Illustris TNG</strong> and <strong>Gaia DR3 XP</strong> is available at <a href="https://space.h-its.org">space.h-its.org</a></li>
 </ul>
 </section>
-<section id="acknowledgement-disclaimer" class="slide level2" data-background-image="images/SPACE_acknowledgement_background.png">
+<section id="acknowledgement-disclaimer" class="slide level2">
 <h2>Acknowledgement &amp; Disclaimer</h2>
-</section>
+
+<img data-src="images/SPACE_acknowledgement_cutout.png" width="1300" class="r-stretch"></section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
@@ -347,8 +345,9 @@ Polsterer, Kai L., Bernd Doser, Andreas Fehlner, and Sebastian Trujillo-Gomez. 2
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/HITS_RGB_eng.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>Spherinator &amp; HiPSter (B. Doser &amp; S. Trujillo-Gomez)</p>
 </div>
 </div></div>
 
@@ -560,6 +559,33 @@ Polsterer, Kai L., Bernd Doser, Andreas Fehlner, and Sebastian Trujillo-Gomez. 2
         ]
       });
     </script>
+    <style>
+      .hide {
+        display: none !important;
+      }
+    </style>
+
+
+    <script>
+      function remove() {
+        let footer = document.querySelector('div.footer');
+        let slideNo = document.querySelector('div.slide-number');
+        slideNo.classList.add('hide');
+        footer.classList.add('hide');
+      
+        Reveal.on('slidechanged', event => {  
+          if(Reveal.isFirstSlide()) {
+            slideNo.classList.add('hide');
+            footer.classList.add('hide');
+          } else {
+            slideNo.classList.remove('hide');
+            footer.classList.remove('hide');
+          }
+        });
+      }
+      
+      window.onload = remove();
+    </script>
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -727,6 +753,23 @@ Polsterer, Kai L., Bernd Doser, Andreas Fehlner, and Sebastian Trujillo-Gomez. 2
         }
       });
       </script>
+    <script type="text/javascript">
+      Reveal.on('ready', event => {
+        if (event.indexh === 0) {
+          document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+        }
+      });
+      Reveal.addEventListener('slidechanged', (event) => {
+        if (event.indexh === 0) {
+          Reveal.configure({ slideNumber: null });
+          document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+        }
+        if (event.indexh === 1) { 
+          Reveal.configure({ slideNumber: 'c' });
+          document.querySelector("div.has-logo > img.slide-logo").style.display = null;
+        }
+      });
+    </script>
     
 
 </body></html>
