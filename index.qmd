@@ -44,8 +44,10 @@ Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)
 
 ## Associated Materials
 
-- The presentation and demo notebooks are publicly available at\
-[github.com/BerndDoser/SPACE_HPC_Visualization_Workshop](https://github.com/BerndDoser/SPACE_HPC_Visualization_Workshop)
+![](images/qrcode_github_repo.svg){.absolute top=0 right=0 width=300}
+
+- The presentation and demo notebooks\
+  are publicly available at [GitHub](github.com/BerndDoser/SPACE_HPC_Visualization_Workshop) (QR code $\rightarrow$)
 - Related project repositories:
   - [PEST](https://github.com/HITS-AIN/PEST): Data acquisition and preprocessing
   - [Spherinator](https://github.com/HITS-AIN/Spherinator): Representation Learning using PyTorch Lightning
