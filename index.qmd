@@ -84,7 +84,7 @@ Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)
 - [Apache Parquet](https://parquet.apache.org/) stores multi-modal data in a unique way
   - Efficient columnar data storage
   - Fast access by [Apache Arrow](https://arrow.apache.org/)
-  - Interoperable with many frameworks (**PyTorch, TensorFlow) and programming languages (Python, Julia, C++, Rust)
+  - Interoperable with many frameworks (**PyTorch**, **TensorFlow**) and programming languages (**Python**, **Julia**, **C++**, **Rust**)
 
 :::
 :::
@@ -132,7 +132,7 @@ $N_{X}$: Normalization factor
 ::::
 
 ::: aside
-Source: [@DeCao2020]
+Source: @DeCao2020
 :::
 
 
@@ -147,7 +147,7 @@ HiPS - Hierarchical Progressive Survey
 - The HiPS tilings are visualized with [Aladin-Lite](https://github.com/cds-astro/aladin-lite).
 
 ::: aside
-Source: [@Fernique_2015]
+Source: @Fernique_2015
 :::
 
 # Let's begin the demonstration!
