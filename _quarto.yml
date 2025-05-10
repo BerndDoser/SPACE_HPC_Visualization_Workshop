@@ -1,3 +1,43 @@
-project:
-  render:
-    - index.qmd
+title: Representation Learning with Spherinator
+subtitle: High-Performance Computing Visualization
+# author: |
+#   | Bernd Doser & Sebastian Trujillo-Gomez
+#   | Kai Polsterer, Andreas Fehlner, Fenja Schweder, Romain Chazotte
+author: <strong>Bernd Doser & Sebastian Trujillo-Gomez</strong><br>Kai Polsterer, Andreas Fehlner, Fenja Schweder, Romain Chazotte
+date: 2025/05/14
+date-format: "MMMM YYYY"
+institute: Heidelberg Institute for Theoretical Studies (HITS)
+title-slide-attributes:
+  data-background-image: images/SPACE_title_slide.png
+  data-background-size: cover
+format:
+  revealjs:
+    logo: images/HITS_RGB_eng.jpg
+    footer: "Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)"
+    slide-number: true
+    highlight-style: a11y
+    bibliography: references.bib
+    width: 1300
+    template-partials:
+      - title-slide.html
+    menu: false
+    show-slide-number: print
+    include-after-body: clean_title_page.html
+    include-after: |
+      <script type="text/javascript">
+        Reveal.on('ready', event => {
+          if (event.indexh === 0) {
+            document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+          }
+        });
+        Reveal.addEventListener('slidechanged', (event) => {
+          if (event.indexh === 0) {
+            Reveal.configure({ slideNumber: null });
+            document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+          }
+          if (event.indexh === 1) { 
+            Reveal.configure({ slideNumber: 'c' });
+            document.querySelector("div.has-logo > img.slide-logo").style.display = null;
+          }
+        });
+      </script>

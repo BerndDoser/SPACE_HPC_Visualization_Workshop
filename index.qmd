@@ -1,31 +1,3 @@
----
-# title: Scientific Discovery using Representation Learning to Interpret the Largest Cosmological Simulations
-title: Representation Learning with Spherinator
-subtitle: High-Performance Computing Visualization
-# author: |
-#   | Bernd Doser & Sebastian Trujillo-Gomez
-#   | Kai Polsterer, Andreas Fehlner, Fenja Schweder, Romain Chazotte
-author: <strong>Bernd Doser & Sebastian Trujillo-Gomez</strong><br>Kai Polsterer, Andreas Fehlner, Fenja Schweder, Romain Chazotte
-date: 2025/05/14
-date-format: "MMMM YYYY"
-institute: Heidelberg Institute for Theoretical Studies (HITS)
-title-slide-attributes:
-  data-background-image: images/SPACE_title_slide.png
-  data-background-size: cover
-format:
-  revealjs:
-    # logo: images/HITS_RGB_eng.jpg
-    # footer: "Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)"
-    slide-number: true
-    highlight-style: a11y
-    bibliography: references.bib
-    width: 1300
-    template-partials:
-      - title-slide.html
-    menu: false
-    show-slide-number: print
----
-
 ## Agenda
 
 - **Project X**: The Big Picture
@@ -38,9 +10,6 @@ format:
 
 ![](images/illustris_latent_sphere_quarter.png){.absolute top=-120 right=-100 width="700" height="700"}
 
-:::footer
-Spherinator & HiPSter (B. Doser & S. Trujillo-Gomez)
-:::
 
 ## Associated Materials
 
@@ -206,7 +175,9 @@ https://streamflow.di.unito.it/documentation/0.2/guide/architecture.html)
 - Prototype for **Illustris TNG** and **Gaia DR3 XP** is available at [space.h-its.org](https://space.h-its.org)
 
 
-## Acknowledgement & Disclaimer {background-image="images/SPACE_acknowledgement_background.png"}
+## Acknowledgement & Disclaimer
+
+![](images/SPACE_acknowledgement_cutout.png){width=1300}
 
 
 ## References
