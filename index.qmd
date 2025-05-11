@@ -109,13 +109,10 @@ Source: @DeCao2020
 
 ## HiPSter: The Inference
 
-HiPS - Hierarchical Progressive Survey
+![](images/HEALPix.png){width="800" fig-align="center"}
 
-![](images/HEALPix.png){width="700"}
-
-- The HiPS tiles are reconstructed with the corresponding spherical latent space position.
-
-- The HiPS tilings are visualized with [Aladin-Lite](https://github.com/cds-astro/aladin-lite).
+- The **HEALPix framework** is used to generate a **Hierarchical Progressive Survey (HiPS)** for the corresponding spherical latent space positions.
+- [Aladin-Lite](https://github.com/cds-astro/aladin-lite) is designed to visualize the HiPS representation.
 
 ::: aside
 Source: @Fernique_2015
