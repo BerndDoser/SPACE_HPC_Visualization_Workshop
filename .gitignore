@@ -4,7 +4,7 @@
 *.sarif
 /.quarto/
 /colab/*.onnx
-/colab/output/
+/colab/output*/
 /HiPSter/
 /index_files/
 /output/
