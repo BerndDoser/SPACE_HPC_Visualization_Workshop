@@ -13,10 +13,10 @@
 
 ## Associated Materials
 
-![](images/qrcode_github_repo.svg){.absolute top=0 right=0 width=300}
+![](images/qrcode_github_repo.svg){.absolute top=50 right=0 width=200}
 
-- The presentation and demo notebooks\
-  are publicly available at [GitHub](github.com/BerndDoser/SPACE_HPC_Visualization_Workshop) (QR code $\rightarrow$)
+- The presentation and demo notebooks are publicly available at\
+  [github.com/BerndDoser/SPACE_HPC_Visualization_Workshop](https://github.com/BerndDoser/SPACE_HPC_Visualization_Workshop)
 - Related project repositories:
   - [PEST](https://github.com/HITS-AIN/PEST): Data acquisition and preprocessing
   - [Spherinator](https://github.com/HITS-AIN/Spherinator): Representation Learning using PyTorch Lightning
@@ -127,7 +127,7 @@ Source: @Fernique_2015
 ::: n1
 ::: {style="font-size: 80%;"}
 [Gaia DR3 XP](http://cdn.gea.esac.esa.int/Gaia/gdr3/) 
-contains over **200 billion** blue (BP) and red (RP) spectra as continuous spectra with 55 parameters per spectrum.
+contains over **200 million** blue (BP) and red (RP) spectra as continuous spectra with 55 parameters per spectrum.
 ![](images/calibrated_spectrum_plot.png){width="600"}
 
 
