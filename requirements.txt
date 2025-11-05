@@ -1,5 +1,6 @@
-astro-pest @ git+https://github.com/BerndDoser/PEST
 astro-hipster @ git+https://github.com/BerndDoser/HiPSter
-spherinator @ git+https://github.com/BerndDoser/Spherinator
-ipykernel>=6.29.5,<7.0.0
+astro-pest @ git+https://github.com/BerndDoser/PEST
+gdown
 ipyaladin>=0.6.0,<1.0.0
+ipykernel>=6.29.5,<7.0.0
+spherinator @ git+https://github.com/BerndDoser/Spherinator
